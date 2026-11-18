@@ -61,3 +61,13 @@
 - Screenshot shows ADC 3535, dry-soil Serial output, and water-droplet OLED icon.
 - Wokwi board is ESP32 DevKit C V4; planned physical board is ESP32-WROVER.
 - Next: verify clean import of the committed simulation files; add screenshot to repository when binary upload is supported.
+
+## 2026-11-18 — Simulation 10 accepted
+- Project owner confirmed Wokwi simulation complete and provided screenshot plus full diagram JSON.
+- Archived source: `simulation/sim10/sketch.ino`; exact three-LED circuit: `simulation/sim10/diagram.json`.
+- OLED dashboard displays ADC, estimated relative moisture, soil category, watering status, and elapsed time since probable watering; measurements stay visible in UNKNOWN and SENSOR_ERROR.
+- Screenshot: ADC 3126, dry soil, WATER NEEDED, blue LED lit, and recovery messages in Serial.
+- Independent sensor updates every 1000 ms and red-error blinking every 500 ms were reported working.
+- Calibration endpoints 1080 wet / 3300 dry are provisional simulation assumptions; thresholds remain uncalibrated for physical hardware.
+- Unverified: extended runtime, stuck-sensor detection, watering-event reliability, physical electrical operation.
+- **Milestone:** Simulation 10 completed by user acceptance; next: physical prototype and empirical calibration.
