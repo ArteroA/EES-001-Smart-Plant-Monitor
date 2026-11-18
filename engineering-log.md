@@ -54,3 +54,10 @@
 
 ## Status
 **Simulation prototype — physical build pending.** Do not describe this project as a completed or physically validated plant monitor yet.
+
+## 2026-11-18 — Simulation 08 source archived
+- Received the full current sketch, Wokwi diagram JSON, and screenshot from the project owner.
+- Committed `simulation/sketch.ino`, `simulation/diagram.json`, and `simulation/libraries.txt`.
+- Screenshot shows ADC 3535, dry-soil Serial output, and water-droplet OLED icon.
+- Wokwi board is ESP32 DevKit C V4; planned physical board is ESP32-WROVER.
+- Next: verify clean import of the committed simulation files; add screenshot to repository when binary upload is supported.
