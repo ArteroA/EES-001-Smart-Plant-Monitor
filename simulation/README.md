@@ -1,9 +1,17 @@
-# Simulation
+# Wokwi Simulation 08 — OLED Integration
 
-**Wokwi:** https://wokwi.com/projects/480783464526701569
+[Open interactive simulation](https://wokwi.com/projects/480783464526701569)
 
-The current Wokwi project simulates soil moisture using a potentiometer connected to ESP32 GPIO34. The SSD1306 OLED uses SDA GPIO21 and SCL GPIO22.
+## Archived files
+- [sketch.ino](sketch.ino): source code supplied by the project owner
+- [diagram.json](diagram.json): Wokwi circuit configuration supplied by the project owner
+- [libraries.txt](libraries.txt): Adafruit display dependencies (library list reconstructed from sketch includes; confirm Wokwi library manager if necessary)
 
-**To archive reproducible simulation files:** export/copy the current `sketch.ino`, `diagram.json`, and any `libraries.txt` from Wokwi into this folder (or place source in `src/`). This repository does not yet contain a verified export of those files.
+Wokwi uses **board-esp32-devkit-c-v4**, a potentiometer (GPIO34), and an SSD1306 OLED (SDA GPIO21, SCL GPIO22). The planned physical board is an ESP32-WROVER, so verify pinout and board selection before construction.
 
-Simulation validates logic under modeled conditions; it does not establish real sensor calibration or electrical/physical safety.
+## Recorded evidence
+The user-provided screenshot shows the droplet icon with ADC 3535 and Serial messages “Dry Soil” and “Watering Needed.” Other OLED states and recovery were reported as tested in earlier sessions.
+
+**Note:** The screenshot was supplied in chat but has not yet been committed as a binary image. Code was transcribed from chat formatting; test a fresh Wokwi import to confirm reproducibility.
+
+All thresholds are simulation assumptions, not real sensor calibration.
