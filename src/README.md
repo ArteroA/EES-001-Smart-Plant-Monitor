@@ -1,7 +1,5 @@
-# Firmware source
+# Firmware
 
-The working firmware currently lives in the [Wokwi project](https://wokwi.com/projects/480783464526701569).
+The baseline **Simulation 08** firmware is archived at [../simulation/sketch.ino](../simulation/sketch.ino). The Wokwi circuit is archived alongside it at [../simulation/diagram.json](../simulation/diagram.json).
 
-**Pending:** copy the exact latest `sketch.ino` here. We should avoid publishing a reconstructed or potentially outdated sketch as the authoritative version.
-
-Once imported, track changes to state transitions, thresholds, OLED graphics, and sensor error handling with descriptive commits.
+For the physical build, we can copy the validated baseline here and then document any calibration, wiring, or sensor-specific changes. Avoid maintaining two divergent copies without explanation.
